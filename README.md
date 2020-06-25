@@ -7,11 +7,11 @@ JavaGuide is such a nice project, so I just wanna create this repository, wishin
 ## 目录
 
 - [JavaScript基础](#javascript基础)
-     [1.原始值和引用值类型及区别](#1原始值和引用值类型及区别)
-     [2.undefined和null的区别](#2undefined和null的区别)
-     [3.JS中的内存泄漏](#3内存泄漏)
-     [4.JS中的垃圾回收（GC）](#4JS中的垃圾回收（GC）)
-     [5.浅拷贝与深拷贝](#5浅拷贝与深拷贝)
+     - [1.原始值和引用值类型及区别](#1原始值和引用值类型及区别)
+     - [2.undefined和null的区别](#2undefined和null的区别)
+     - [3.JS中的内存泄漏](#3内存泄漏)
+     - [4.JS中的垃圾回收（GC）](#4JS中的垃圾回收（GC）)
+     - [5.浅拷贝与深拷贝](#5浅拷贝与深拷贝)
 - [ES6](#java)
 - [网络](#网络)
 - [操作系统](#操作系统)
@@ -31,7 +31,7 @@ JavaGuide is such a nice project, so I just wanna create this repository, wishin
 
 
 
-####2undefined和null的区别
+#### 2undefined和null的区别
 
 **undefined：**
 表示“未定义”，是一个不正常的值。当一个变量申明了，却没有初始化时，其值默认为undefined。

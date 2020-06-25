@@ -10,10 +10,24 @@ JavaGuide is such a nice project, so I just wanna create this repository, wishin
      - [1.原始值和引用值类型及区别](#1原始值和引用值类型及区别)
      - [2.undefined和null的区别](#2undefined和null的区别)
      - [3.JS中的内存泄漏](#3内存泄漏)
-     - [4.JS中的垃圾回收（GC）](#4JS中的垃圾回收（GC）)
+     - [4.JS中的垃圾回收机制（GC）](#4JS中的垃圾回收机制（GC）)
      - [5.浅拷贝与深拷贝](#5浅拷贝与深拷贝)
-- [ES6](#java)
+     - [6.判断数据类型的方法](#6判断数据类型的方法)
+- [ES6](#es6)
+     - [1.let、const和var的概念与区别](#1let、const和var的概念与区别)
+     - [2.变量提升与暂时性死区](#2变量提升与暂时性死区)
+     - [3.变量的结构赋值](#3变量的结构赋值)
+     - [4.箭头函数及其this问题](#4箭头函数及其this问题)
+     - [5.Symbol概念及其作用](#5Symbol概念及其作用)
+     - [6.Set和Map数据结构](#6Set和Map数据结构)
 - [网络](#网络)
+     - [1.OSI 七层模型](#1OSI 七层模型)
+     - [2.http1.0 http1.1 http2.0](#2http1.0 http1.1 http2.0)
+     - [3.HTTP建立持久连接的意义](#3HTTP建立持久连接的意义)
+     - [4.HTTP报文的结构](#4HTTP报文的结构)
+     - [5.HTTP状态码](#5HTTP状态码)
+     - [6.Set和Map数据结构](#6Set和Map数据结构)
+     - [7.Cookie与Session](#7Cookie与Session) 
 - [操作系统](#操作系统)
 - [数据结构与算法](#数据结构与算法)**
 
@@ -28,8 +42,21 @@ JavaGuide is such a nice project, so I just wanna create this repository, wishin
 **引用类型：**`Object`
 
 - **除了常用的Object，Array、Function等都属于特殊的对象**
+- ** **
 
+![Alt text](./pictures/1593091870011.png)
 
+**栈内存：**存储的值大小固定
+**堆内存：**存储的值大小不固定
+- 为什么str+=6结果为 "JackieHung6" ?
+![Alt text](./pictures/1593094167516.png)
+
+- 为什么基本类型也有方法和属性，eg：str.length ?
+基本包装类型：Boolean、Number、String
+对于调用基本类型方法和属性时（eg，String为例），进行以下操作：
+	- new 一个String类型的实例对象
+	- 在实例对象上调用指定的方法
+	- 销毁这个实例对象
 
 #### 2undefined和null的区别
 
@@ -44,6 +71,19 @@ JavaGuide is such a nice project, so I just wanna create this repository, wishin
  - 二是认为，这是一个遗留下来的bug。null的机器码全为0，导致typeof算法判断的时候将其判断为对象。
 
 -  对于**未申明的变量**，直接使用会报 `Uncaught ReferenceError`的错误。但typeof 操作符对**未申明**和**未初始化**的变量返回的结果都是`undefined`。
+#### 3JS中的内存泄漏
+**内存泄露（memory leak）：**对于不再用到的内存，没有及时释放，就叫做内存泄漏
+
+#### 4JS中的垃圾回收机制（GC）
+
+- 引用计数
+- 标记清除
 
 
+#### 6判断数据类型的方法
+- typeof
+- instanceof
+- Object.prototype.toString.call()
+- constructor
 
+## ES6

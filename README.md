@@ -44,12 +44,12 @@ JavaGuide is such a nice project, so I just wanna create this repository, wishin
 - **除了常用的Object，Array、Function等都属于特殊的对象**
 - ** **
 
-![Alt text](./pictures/1593091870011.png)
+![Alt text](https://github.com/Jackie-Hung/JavaScriptGuide/blob/master/pictures/1593091870011.png)
 
 **栈内存：**存储的值大小固定
 **堆内存：**存储的值大小不固定
 - 为什么str+=6结果为 "JackieHung6" ?
-![Alt text](./pictures/1593094167516.png)
+![Alt text](https://github.com/Jackie-Hung/JavaScriptGuide/blob/master/pictures/1593094167516.png)
 
 - 为什么基本类型也有方法和属性，eg：str.length ?
 基本包装类型：Boolean、Number、String

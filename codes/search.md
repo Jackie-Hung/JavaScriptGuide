@@ -8,6 +8,14 @@ function TreeNode(val) {
 function visit(node){
     console.log(node.val);
 }
+//先序遍历代码
+let PreOrder = function(root){
+	if(root){
+		visit(root);
+		PreOrder(root.left);
+		PreOrder(root.right);
+	}
+}
 //层序遍历代码
 let levelOrder = function(root){
     let queue = [];
